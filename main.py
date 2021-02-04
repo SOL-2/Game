@@ -41,7 +41,10 @@ while True:
     elif ans1 == str(2):
         print('''[으아아아악 ---- !!! 당신도 갇혀버렸네요]
         게임 종료 훙칫뿡''')
+        exit()
         break
+        
+
 
 
     else:
@@ -52,6 +55,7 @@ while True:
         if count >= 5:
             print('장난을 치다니 용서할 수 없군요!!! 솔이에게 케이쿠를 사주세요 훙훙')
             print('게임 종료 훙칫뿡')
+            exit()
             break
 
 
@@ -70,6 +74,9 @@ print()
 print('='*167)
 
 print()
+
+count = 0
+
 print('''솔이는 컴퓨터 세계에 맞서 싸우기 위해 무기를 먼저 무기를 찾기로 했어요.
 
 [아무래도 컴퓨터 속이니까 코딩으로 맞서 싸워야겠지...??]
@@ -95,18 +102,29 @@ while True:
         print()
         print('C++을 뽑자 칼 날이 저기 먼 다른 곳을 가리키더니 번쩍!! 하고 날라갔어요')
         print('솔이는 무기를 잃고 게임 종료')
+        exit()
         break
+
 
     elif ans2 == str(3) or ans2 == '자바':
         print()
         print('자바를 뽑아든 솔이...!!')
         print('[검이 너무 무거워서 휘두르질 못하겠어 ㅜㅜ]')
-        print('솔이는 어깨가 빠져 게임 종료')
+        print('솔이의 어깨가 빠져 게임 종료')
+        exit()
         break
 
     else:
         print()
         print('[그런 무기는 안보이는데?? 다시 확인해봐]')
+        count += 1
+            
+        if count >= 5:
+            print('장난을 치다니 용서할 수 없군요!!! 솔이에게 케이쿠를 사주세요 훙훙')
+            print('게임 종료 훙칫뿡')
+            exit()
+            break
+
         print()
         continue
 
